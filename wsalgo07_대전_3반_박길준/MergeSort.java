@@ -58,7 +58,21 @@ public class MergeSort {
 	}
 
 	public static void main(String[] args) {
-
+        int[] array = new int[10];
+        
+        for(int i = 0; i < array.length; i++){
+            array[i] = (int)(Math.random()*15+1);
+        }
+        
+        sort(array, 0, 9);
+        
+        print(array);
 	}
-
+    
+    public static void print(int [] arr){
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+    }
 }
